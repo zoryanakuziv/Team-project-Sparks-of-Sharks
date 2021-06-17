@@ -61,8 +61,8 @@ var e=require("process"),t=require("./utils"),r=require("./helpers/normalizeHead
 },{"./utils":"S1cf","./helpers/bind":"EDTP","./core/Axios":"OvAf","./core/mergeConfig":"OHvn","./defaults":"BXyq","./cancel/Cancel":"mIKj","./cancel/CancelToken":"tsWd","./cancel/isCancel":"V30M","./helpers/spread":"X8jb","./helpers/isAxiosError":"wICU"}],"dZBD":[function(require,module,exports) {
 module.exports=require("./lib/axios");
 },{"./lib/axios":"nUiQ"}],"gQD7":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("axios"));function t(e){return e&&e.__esModule?e:{default:e}}class s{constructor(){this.searchQuery=""}async makeRequest(){let t=await(0,e.default)({method:"get",url:"http://webcode.me"});console.log(t.status)}}exports.default=s;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("axios"));function t(e){return e&&e.__esModule?e:{default:e}}const a="e0f5a2b3f12c3f7ea9352edce7e33432";e.default.defaults.baseURL="https://api.themoviedb.org/3";class s{constructor(){this.searchQuery=""}async getTrendingMovies(t){const s={method:"get",url:`/trending/movie/day?api_key=${a}&page=${t}`};await(0,e.default)(s).then(e=>(console.log(e.data.results),e.data.results))}}exports.default=s;
 },{"axios":"dZBD"}],"Focm":[function(require,module,exports) {
-"use strict";require("normalize.css"),require("./sass/main.scss");var e=s(require("./js/api/apiService"));function s(e){return e&&e.__esModule?e:{default:e}}const r=new e.default;console.log(r.makeRequest());
+"use strict";require("normalize.css"),require("./sass/main.scss");var e=s(require("./js/api/apiService"));function s(e){return e&&e.__esModule?e:{default:e}}const n=new e.default,i=1;function o(){const e=n.getTrendingMovies(i).then(e=>{console.log(e)});console.log(e)}o();
 },{"normalize.css":"DOAq","./sass/main.scss":"clu1","./js/api/apiService":"gQD7"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel/src.323a8444.js.map
+//# sourceMappingURL=/parcel/src.6427a3fe.js.map
