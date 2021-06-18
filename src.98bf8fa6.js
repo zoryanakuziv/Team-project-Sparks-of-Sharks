@@ -75,4 +75,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"./api/apiService":"gQD7","./createMarkup":"kQMz","./getRef":"ZIIB"}],"Focm":[function(require,module,exports) {
 "use strict";require("normalize.css"),require("./sass/main.scss"),require("./js/main");
 },{"normalize.css":"DOAq","./sass/main.scss":"DOAq","./js/main":"d6sW"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel/src.98bf8fa6.js.map
+//# sourceMappingURL=/Team-project-Sparks-of-Sharks/src.98bf8fa6.js.map
